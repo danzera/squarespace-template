@@ -9,14 +9,12 @@
   </head>
 
   <body>
-    <p>Old Sole Photography</p>
-
     <div class="container">
 
       <header class="header">
-        <h1 class="site-title">
+        <h1 class="site-title" data-content-field="site-title">
           <a href="/">
-            Developer Platform Beginner Tutorial
+            {website.siteTitle}
           </a>
         </h1>
       </header>
