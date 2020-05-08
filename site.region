@@ -12,6 +12,7 @@
     <div class="container">
 
       <header class="header">
+        <!-- data-content-field attribute directs the editor interface within the Squarespace CMS when editing site within the online UI -->
         <h1 class="site-title" data-content-field="site-title">
           <a href="/">
             {website.siteTitle}
