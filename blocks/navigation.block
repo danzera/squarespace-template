@@ -1,0 +1,21 @@
+<nav>
+	<ul>
+		{# iterate over a list of items }
+		{.repeated section items}
+		<li class="{.section active} active-link{.end}">
+
+			{#  .section allows HTML to be displayed optionally IF a given key is present in the context  }
+			{.section collection}
+				<a href="{fullUrl}">{navigationTitle}</a>
+			{.end}
+
+			{#  .section allows HTML to be displayed optionally IF a given key is present in the context  }
+			{.section externalLink}
+				<a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a>
+			{.end}
+
+		</li>
+		{.end}
+
+	</ul>
+</nav>

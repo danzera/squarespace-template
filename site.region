@@ -20,6 +20,11 @@
         </h1>
       </header>
 
+      {#  Squarespace navigation tag tells the Ss platform which nav ID corresponds to which nav .block file  }
+      {#  navigationId value must match the "name" value of a navigation defined in template.conf  }
+      {#  template value must match the filename of a .block template in the /blocks directory  }
+      <squarespace:navigation navigationId="mainNav" template="navigation" />
+
       <main class="content">
         <section id="page" role="main" data-content-field="main-content">
           {squarespace.main-content}
