@@ -5,7 +5,7 @@
 
 		{#  POST TITLE  }
 		<h1 class="title" data-content-field="title">
-			{.passthrough}
+			{.passthrough?}
 				<a href="{sourceUrl}" target="_blank">{title}</a>
 			{.or}
 				<a href="{fullUrl}">{title}</a>
